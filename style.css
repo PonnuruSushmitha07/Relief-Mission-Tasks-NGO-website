@@ -1,0 +1,27 @@
+/* Basic reset & layout */
+:root{--max-w:1100px;--gap:1.25rem;--primary:#2b7a78}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;color:#222;line-height:1.5}
+.container{max-width:var(--max-w);margin:0 auto;padding:1.25rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;font-size:1.25rem}
+.main-nav a{margin-left:1rem;text-decoration:none;color:inherit}
+.site-header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:10}
+.hero{padding:4rem 0;background:linear-gradient(180deg,#f2fffb,#fff);text-align:center}
+.hero h2{margin:0 0 .5rem;font-size:1.75rem}
+.btn{padding:.6rem .9rem;border-radius:8px;border:1px solid #ccc;background:#fff;cursor:pointer}
+.btn.primary{background:var(--primary);color:white;border:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:white;padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(34,34,34,.06)}
+.about p{max-width:60ch}
+.stats{display:flex;gap:2rem;justify-content:space-around;padding:1rem 0}
+.stats strong{display:block;font-size:1.5rem}
+.forms-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.get-involved .card{padding:1rem}
+.small-msg{margin-top:.5rem;color:green}
+.contact-card{display:grid;grid-template-columns:1fr;gap:1rem}
+.site-footer{background:#fafafa;padding:1rem 0;border-top:1px solid #eee;text-align:center}
+@media(min-width:800px){
+.contact-card{grid-template-columns:2fr 1fr}
+.forms-grid{grid-template-columns:1fr 1fr}
+}
